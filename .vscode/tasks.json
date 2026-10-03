@@ -2,7 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Installer les extensions du projet",
+            "label": "Install project extensions",
             "type": "shell",
             "command": "uv run --no-project --quiet .vscode/install_extensions.py",
             "runOptions": { "runOn": "folderOpen" },

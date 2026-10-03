@@ -1,9 +1,9 @@
 {
-    // --- Cellules (Databricks + standard "# %%") ---
+    // --- Cells (Databricks + standard "# %%") ---
     "jupyter.interactiveWindow.cellMarker.codeRegex": "^# COMMAND ----------|^# Databricks notebook source|^(#\\s*%%|#\\s*\\<codecell\\>|#\\s*In\\[\\d*?\\]|#\\s*In\\[ \\])",
     "jupyter.interactiveWindow.cellMarker.default": "# %%",
 
-    // --- Identité visuelle (violet) ---
+    // --- Visual identity (purple) ---
     "workbench.colorCustomizations": {
         "activityBar.background": "#5B3A9E",
         "activityBar.foreground": "#ffffff",
@@ -15,7 +15,7 @@
     },
 
     // --- Python ---
-    "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+    "python.defaultInterpreterPath": "C:\\Users\\do\\AppData\\Roaming\\uv\\python\\cpython-3.14-windows-x86_64-none\\python.exe",
     "python.terminal.activateEnvironment": false,
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.autoImportCompletions": true,
@@ -23,7 +23,7 @@
     "python.testing.unittestEnabled": false,
     "python.testing.pytestArgs": ["tests"],
 
-    // --- Format / lint (Ruff remplace black, isort, flake8) ---
+    // --- Format / lint (Ruff replaces black, isort, flake8) ---
     "[python]": {
         "editor.defaultFormatter": "charliermarsh.ruff",
         "editor.formatOnSave": true,
@@ -43,7 +43,7 @@
     "jupyter.askForKernelRestart": false,
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
 
-    // --- Hygiène de fichiers ---
+    // --- File hygiene ---
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "editor.rulers": [88],
@@ -58,13 +58,13 @@
         "**/*.lock": true
     },
     "git.autofetch": true,
-    // --- Fin de ligne ---
+    // --- Line endings ---
     "files.eol": "\n",
 
-    // --- Copilot : messages de commit ---
+    // --- Copilot: commit messages ---
     "github.copilot.chat.commitMessageGeneration.instructions": [
         {
-            "text": "Rédige le message de commit selon la spécification Conventional Commits : <type>(<portée optionnelle>): <description>. Types autorisés : feat, fix, docs, style, refactor, perf, test, build, ci, chore. Description à l'impératif, en minuscules, sans point final, 72 caractères maximum. Ajoute un corps seulement si nécessaire, séparé par une ligne vide. Écris en français."
+            "text": "Write the commit message following the Conventional Commits specification: <type>(<optional scope>): <description>. Allowed types: feat, fix, docs, style, refactor, perf, test, build, ci, chore. Description in the imperative mood, lowercase, no trailing period, 72 characters maximum. Add a body only if necessary, separated by a blank line. Write in English."
         }
     ]
 }

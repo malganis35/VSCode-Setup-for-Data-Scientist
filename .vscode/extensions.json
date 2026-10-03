@@ -27,7 +27,7 @@
         // Git
         "codezombiech.gitignore",
 
-        // Fichiers & config
+        // Files & config
         "redhat.vscode-yaml",
         "tamasfe.even-better-toml",
         "esbenp.prettier-vscode",
@@ -35,7 +35,7 @@
         "wholroyd.jinja",
         "christian-kohler.path-intellisense",
 
-        // Qualité de vie
+        // Quality of life
         "streetsidesoftware.code-spell-checker",
         "bierner.markdown-mermaid",
         "github.copilot-chat"
