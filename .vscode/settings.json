@@ -15,7 +15,7 @@
     },
 
     // --- Python ---
-    "python.defaultInterpreterPath": "C:\\Users\\do\\AppData\\Roaming\\uv\\python\\cpython-3.14-windows-x86_64-none\\python.exe",
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
     "python.terminal.activateEnvironment": false,
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.autoImportCompletions": true,
@@ -57,5 +57,14 @@
         "**/.venv": true,
         "**/*.lock": true
     },
-    "git.autofetch": true
+    "git.autofetch": true,
+    // --- Fin de ligne ---
+    "files.eol": "\n",
+
+    // --- Copilot : messages de commit ---
+    "github.copilot.chat.commitMessageGeneration.instructions": [
+        {
+            "text": "Rédige le message de commit selon la spécification Conventional Commits : <type>(<portée optionnelle>): <description>. Types autorisés : feat, fix, docs, style, refactor, perf, test, build, ci, chore. Description à l'impératif, en minuscules, sans point final, 72 caractères maximum. Ajoute un corps seulement si nécessaire, séparé par une ligne vide. Écris en français."
+        }
+    ]
 }
